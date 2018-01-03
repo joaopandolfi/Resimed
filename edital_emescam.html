@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/geral.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize_override.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font_icomoon.css" media="screen,projection"/>
+
+    <!-- Para usar os ícones do google material design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <title>Resimed</title>
+
+    <style id="dynamicStyle"></style>
+</head>
+<body>
+
+<nav class="action-bar perfil">
+    <ul id="slide-out" class="side-nav">
+        <div class="container-topo-menu">
+            <img src="img/meu-perfil.jpg" class="circle" />
+            <div class="nome">Vinicius Bispo Neves</div>
+        </div>
+
+        <li><a id="link-atividades" href="index.html#atividades" onclick="reload();">Atividades</a></li>
+        <li>
+            <a id="meus-editais" href="javascript:void(0)">
+                <span>Meus editais</span>
+                <i class="icon-expand-more"></i>
+            </a>
+            <div class="container-menu-editais" style="display: none">
+                <a href="edital_emescam.html#menu">EMESCAM</a>
+                <a href="edital_heci.html#menu">HECI</a>
+            </div>
+        </li>
+        <li><a href="javascript:void(0)">Sobre o Resimed</a></li>
+        <li style="border-bottom: 1px solid #d8dbe0"><a href="javascript:void(0)">Fale conosco</a></li>
+        <li><a href="javascript:void(0)">Configurações</a></li>
+
+    </ul>
+    <a id="icon-drawer" href="javascript:void(0)" data-activates="slide-out" class="button-collapse"><i class="icon-menu-drawer normal"></i></a>
+    <a id="icon-back" href="javascript:window.history.back();" class="button-collapse"><i class="icon-nav-back normal"></i></a>
+    <a href="javascript:void(0)" id="btn-menu-favorite" class="button-action">
+        <i class="icon-favorite-on"></i>
+    </a>
+    <h2 class="action-bar">EMESCAM</h2>
+</nav>
+
+<div class="container-tabs">
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s3"><a href="#edital" class="active">Edital</a></li>
+            <li class="tab col s3"><a href="#vagas">Vagas</a></li>
+            <li class="tab col s3"><a href="#calendario">Calendário</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content pad">
+
+    <div id="edital" class="col s12">
+        <div class="item-edital">
+            <h6>Edital</h6>
+            <p>Nº 01/2016</p>
+        </div>
+        <div class="item-edital">
+            <h6>Instituição</h6>
+            <p>EMESCAM - Escola da Santa Casa de Misericórdia de Vitória</p>
+        </div>
+        <div class="item-edital">
+            <h6>Endereço</h6>
+            <p>Av. N. S. da Penha, 2190, Santa Luiza - Vitória - ES - 29045-402</p>
+        </div>
+        <div class="item-edital">
+            <h6>Valor da inscrição</h6>
+            <p>R$ 400,00</p>
+        </div>
+
+        <a href="javascript:void(0)" class="bt-standard bt-silver bt-baixar-edital">baixar edital</a>
+
+    </div>
+
+    <div id="vagas" class="col s12">
+        <div id="container-acesso-direto" class="container-vagas">
+            <h3>Acesso Direto</h3>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Cirurgia Geral</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>02 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>06</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Clínica Médica</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>02 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>06</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Ginecologia e Obstetrícia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>03 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>07</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Medicina de Família e Comunidade</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>02 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>04</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Dermatologia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>03 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>04</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Oftalmologia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>03 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>02</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Ortopedia e Traumatologia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>03 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>02</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Ortopedia e Traumatologia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>03 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>02</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Centro Médico Hospitalar de Vila Velha</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Pediatria</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>02 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>08</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória / Hospital Infantil Francisco de Assis</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container-pre-requisito" class="container-vagas">
+            <h3>Pré-requisito</h3>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Neonatologia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>02 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>02</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Requisito: <span>Pediatria</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória / Centro Médico Hospitalar de Vila Velha</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Geriatria</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>02 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>02</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Requisito: <span>Cliníca Médica</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Cancerologia Clínica</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>03 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>02</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Requisito: <span>Cliníca Médica</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Local da residência: <span>Hospital Santa Casa de Misericórdia de Vitória</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="calendario" class="col s12">
+
+        <ul>
+            <li>
+                <a href="descricao_edital_emescam.html#inscricoes" class="item-calendario">
+                    <div>
+                        <h6>Inscrições</h6>
+                        <p>03/11/2015 a 20/11/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#etapa_1" class="item-calendario">
+                    <div>
+                        <h6>1ª etapa do processo seletivo</h6>
+                        <p>29/11/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#etapa_2" class="item-calendario">
+                    <div>
+                        <h6>2ª etapa do processo seletivo</h6>
+                        <p>29/11/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#resultado_final" class="item-calendario">
+                    <div>
+                        <h6>Resultado final</h6>
+                        <p>30/12/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/verge.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/dynamic.ui.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
+
+        if(resultado != "busca"){
+
+            var screenWidth = verge.viewportW();
+
+            $(".button-collapse").sideNav({
+                menuWidth: screenWidth - 56, // Default is 240
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            });
+
+            (function ($) {
+                $("#slide-out").on('click', '#meus-editais', function (e) {
+                    $(this).next('.container-menu-editais').toggle(200);
+                    if($(this).children('i').hasClass('icon-expand-less')){
+                        $(this).children('i').removeClass('icon-expand-less').addClass('icon-expand-more');
+                    }else{
+                        $(this).children('i').removeClass('icon-expand-more').addClass('icon-expand-less');
+                    }
+                });
+            })(jQuery);
+
+        }
+
+        (function ($) {
+            $("#vagas").on('click', '.item-vaga-titulo', function (e) {
+                $(this).next('.container-vaga-descricao').toggle(200);
+                if($(this).children('i').hasClass('icon-expand-less')){
+                    $(this).children('i').removeClass('icon-expand-less').addClass('icon-expand-more');
+                }else{
+                    $(this).children('i').removeClass('icon-expand-more').addClass('icon-expand-less');
+                }
+            });
+        })(jQuery);
+
+        (function ($) {
+            $("nav").on('click', '#btn-menu-favorite', function (e) {
+                if($(this).children('i').hasClass('icon-favorite-on')){
+                    $(this).children('i').removeClass('icon-favorite-on').addClass('icon-favorite-off');
+                    Materialize.toast('Edital removido do acompanhamento.', 3000, 'rounded');
+                }else{
+                    $(this).children('i').removeClass('icon-favorite-off').addClass('icon-favorite-on');
+                    Materialize.toast('Edital em acompanhamento.', 3000, 'rounded');
+                }
+            });
+        })(jQuery);
+
+    });
+
+    var hash = location.hash;
+    var resultado = hash.substr(1);
+
+    switch(resultado) {
+        case "busca":
+            document.querySelector("#slide-out").style.display = "none";
+            document.querySelector("#icon-drawer").style.display = "none";
+            document.querySelector("#icon-back").style.display = "block";
+            break;
+        case "menu":
+            document.querySelector("#slide-out").style.display = "block";
+            document.querySelector("#icon-drawer").style.display = "block";
+            document.querySelector("#icon-back").style.display = "none";
+            document.querySelector(".container-menu-editais").style.display = "block";
+            document.querySelector("#meus-editais i").classList.remove("icon-expand-less");
+            document.querySelector("#meus-editais i").classList.add("icon-expand-more");
+            break;
+        default:
+        //window.location = "busca_edital.html";
+    }
+
+</script>
+
+</body>
+</html>

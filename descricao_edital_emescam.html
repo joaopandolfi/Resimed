@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/geral.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize_override.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font_icomoon.css" media="screen,projection"/>
+
+    <!-- Para usar os ícones do google material design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <title>Resimed</title>
+
+    <style id="dynamicStyle"></style>
+    <style type="text/css">
+        ul {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="action-bar perfil">
+    <a href="javascript:window.history.back();" class="button-collapse"><i class="icon-nav-back normal"></i></a>
+    <h2 class="action-bar"></h2>
+</nav>
+
+<div class="content pad">
+
+    <ul id="inscricoes" class="lista-calendario-descricao">
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Período de inscrição</h6>
+                <p>03/11/2015 a 20/11/2015</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Horário de inscrição</h6>
+                <p>Até 20/11/2015 às 17:00 horas</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Valor</h6>
+                <p>R$ 400,00</p>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.emescam.br/" class="item-calendario-descricao container-link">
+                <h6>Site para inscrição</h6>
+                <p class="link">http://www.emescam.br/</p>
+            </a>
+        </li>
+    </ul>
+
+    <ul id="etapa_1_acesso_direto" class="lista-calendario-descricao">
+        <h3>Acesso Direto</h3>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Data da prova</h6>
+                <p>29/11/2015</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Horário da prova</h6>
+                <p>Das 8:00 horas às 12:00 horas</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Tipo de prova</h6>
+                <p>Prova objetiva</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul id="etapa_1_requisito" class="lista-calendario-descricao">
+        <h3>Pré-requisito</h3>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Data da prova</h6>
+                <p>29/11/2015</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Horário da prova</h6>
+                <p>Das 8:00 horas às 12:00 horas</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Tipo de prova</h6>
+                <p>Prova objetiva</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul id="etapa_2_acesso_direto" class="lista-calendario-descricao">
+        <h3>Acesso Direto</h3>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Data da prova</h6>
+                <p>29/11/2015</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Horário da prova</h6>
+                <p>Das 14:00 horas às 15:00 horas</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Tipo de prova</h6>
+                <p>Prova teórico/prática e Análise do curriculum vitae</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul id="etapa_2_requisito" class="lista-calendario-descricao">
+        <h3>Pré-requisito</h3>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Data da prova</h6>
+                <p>29/11/2015</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Horário da prova</h6>
+                <p>Às 14:00 horas</p>
+            </div>
+        </li>
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Tipo de prova</h6>
+                <p>Prova teórico/prática e Análise do curriculum vitae</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul id="resultado_final" class="lista-calendario-descricao">
+        <li>
+            <div class="item-calendario-descricao">
+                <h6>Data do resultado</h6>
+                <p>30/12/2015</p>
+            </div>
+        </li>
+        <li>
+            <a href="http://www.emescam.br/" class="item-calendario-descricao container-link">
+                <h6>Local de divulgação</h6>
+                <p class="link">http://www.emescam.br/</p>
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/verge.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/dynamic.ui.js"></script>
+
+<script type="text/javascript">
+
+    var hash = location.hash;
+    var resultado = hash.substr(1);
+    console.log(resultado);
+
+    switch(resultado) {
+        case "inscricoes":
+            document.querySelector("nav h2").innerHTML = "Inscrições";
+            document.querySelector("#inscricoes").style.display = "block";
+            break;
+        case "etapa_1":
+            document.querySelector("nav h2").innerHTML = "1ª etapa do processo seletivo";
+            document.querySelector("#etapa_1_acesso_direto").style.display = "block";
+            document.querySelector("#etapa_1_acesso_direto h3").style.marginTop = "10px";
+            document.querySelector("#etapa_1_requisito").style.display = "block";
+            break;
+        case "etapa_2":
+            document.querySelector("nav h2").innerHTML = "2ª etapa do processo seletivo";
+            document.querySelector("#etapa_2_acesso_direto").style.display = "block";
+            document.querySelector("#etapa_2_acesso_direto h3").style.marginTop = "10px";
+            document.querySelector("#etapa_2_requisito").style.display = "block";
+            break;
+        case "resultado_final":
+            document.querySelector("nav h2").innerHTML = "Resultado final";
+            document.querySelector("#resultado_final").style.display = "block";
+            break;
+        default:
+            //window.location = "busca_edital.html";
+    }
+
+</script>
+
+</body>
+</html>

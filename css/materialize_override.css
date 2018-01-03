@@ -1,0 +1,338 @@
+html {
+    background-color: #fafafa;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+a { color: #4d4d4d; }
+
+.waves-effect .waves-ripple {
+    background: rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 34px;
+    line-height: auto;
+    margin: auto;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 20px;
+    margin: auto;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: auto;
+    margin: auto;
+    font-family: 'Lato';
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: auto;
+    margin: auto;
+    font-family: 'Lato';
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: auto;
+    margin: auto;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    background-color: #054c29;
+}
+
+nav.action-bar.extended {
+    height: 104px;
+}
+
+nav .button-collapse {
+    padding: 0 16px;
+}
+
+nav .button-collapse:active, nav .button-action:active {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+nav .button-collapse i {
+    font-size: 24px;
+}
+
+nav .button-action {
+    float: right;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 56px;
+    padding: 0 15px;
+}
+
+nav .button-action i {
+    height: 56px;
+    line-height: 56px;
+}
+
+h2.action-bar {
+    line-height: 56px;
+}
+
+.action-bar~.content {
+    top: 56px;
+}
+
+.action-bar~.parametros-busca~.content {
+    top: 120px;
+    padding-top: 0;
+}
+
+.action-bar~.container-tabs~.content {
+    top: 104px;
+}
+
+.action-bar.extended~.content {
+    top: 104px;
+}
+
+.action-bar.regiao~.content {
+    top: 104px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    text-wrap: normal;
+}
+
+.content.pad {
+    padding: 8px 12px;
+}
+
+ul.side-nav {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.side-nav a:hover, nav ul a:hover {
+    background: none;
+}
+
+
+
+/*-------- MENU DRAWER ---------*/
+
+.container-topo-menu {
+    box-sizing: border-box;
+    padding: 16px;
+    border-bottom: 1px solid #d8dbe0;
+    background-color: #054c29;
+}
+
+.container-topo-menu img {
+    display: block;
+    width: 72px;
+    height: 72px;
+}
+
+.container-topo-menu .nome {
+    margin-top: 16px;
+    color: #ffffff;
+    line-height: 16px;
+}
+
+.side-nav {
+    background-color: #f3f5f7;
+}
+
+.side-nav a {
+    font-weight: 700;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 16px;
+}
+
+.side-nav a.active {
+    font-weight: 700;
+    color: #054c29;
+}
+
+#meus-editais {
+    position: relative;
+}
+
+#meus-editais i {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #587B7F;
+}
+
+.container-menu-editais a {
+    font-weight: 400;
+    padding-left: 36px;
+}
+
+/*-------- FORMS ---------*/
+
+.select-wrapper {
+    padding-top: 5px;
+}
+
+.input-field {
+    margin-top: 30px;
+}
+
+.input-field label {
+    transition: none;
+    left: 0;
+    font-size: 14px;
+}
+
+select {
+    display: block;
+}
+
+/*-------- TABS ---------*/
+
+.tabs {
+    background-color: #054c29;
+}
+
+.tabs .tab a, .tabs .tab a:hover {
+    color: #ffffff;
+}
+
+.tabs .indicator {
+    background-color: #ffffff;
+}
+
+/*-------- TOASTS ---------*/
+
+#toast-container {
+    text-align: center;
+    width: 100%;
+    min-width: auto;
+    bottom: 24px;
+    margin: 0px auto;
+    display: block;
+}
+
+.toast {
+    display: inline-block;
+    width: auto;
+    min-width: 51%;
+    line-height: 48px;
+    padding: 0 30px;
+    margin-top: 24px;
+}
+
+/*-------- MODAL ---------*/
+
+.modal {
+    max-height: 80%;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.modal .modal-content {
+    padding-bottom: 8px;
+}
+
+.modal-content .modal-item {
+    padding: 10px 0;
+}
+
+.modal [type="checkbox"] + label, .modal [type="radio"] + label {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #4d4d4d;
+
+}
+
+.modal [type="checkbox"] + label span, .modal [type="radio"] + label span {
+    color: #777777;
+}
+
+.btn-flat {
+    color: #587B7F;
+}
+
+.modal-footer {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/geral.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize_override.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font_icomoon.css" media="screen,projection"/>
+
+    <!-- Para usar os ícones do google material design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <title>Resimed</title>
+
+    <style id="dynamicStyle"></style>
+</head>
+<body>
+
+<nav class="action-bar perfil">
+    <a href="javascript:window.history.back();" class="button-collapse"><i class="icon-nav-back normal"></i></a>
+    <a href="javascript:void(0)" id="btn-menu-acao" class="button-action" data-activates="dropdown_menu_acao">
+        <i class="icon-menu_acao"></i>
+    </a>
+    <h2 class="action-bar">Buscar editais</h2>
+</nav>
+
+<div class="content pad">
+
+    <form id="busca-edital" method="post" action="resultado_busca_editais.html">
+
+        <div class="item-form">
+            <label>Estado(s)</label>
+            <a href="#modal-estado" id="modal-estado-trigger">Selecione um ou mais estados</a>
+        </div>
+
+        <div class="item-form">
+            <label>Especialidade(s)</label>
+            <a href="#modal-especialidade" id="modal-especialidade-trigger">Selecione uma ou mais especialidades</a>
+        </div>
+
+        <input type="submit" class="bt-standard bt-silver" style="margin-top: 10px" value="buscar editais">
+
+        <!--<a href="javascript:void(0)" class="link-bt-standard link-silver">buscar editais por instituição</a>-->
+
+    </form>
+
+</div>
+
+<div id="modal-estado" class="modal">
+    <div class="modal-content">
+        <h2>Estado(s)</h2>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-1" class="filled-in" name="estadoCheckbox" value="Acre, "/>
+            <label for="estado-1">Acre</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-2" class="filled-in" name="estadoCheckbox" value="Alagoas, "/>
+            <label for="estado-2">Alagoas</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-3" class="filled-in" name="estadoCheckbox" value="Amapá, "/>
+            <label for="estado-3">Amapá</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-4" class="filled-in" name="estadoCheckbox" value="Amazonas, "/>
+            <label for="estado-4">Amazonas</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-5" class="filled-in" name="estadoCheckbox" value="Bahia, "/>
+            <label for="estado-5">Bahia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-6" class="filled-in" name="estadoCheckbox" value="Ceará, "/>
+            <label for="estado-6">Ceará</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-7" class="filled-in" name="estadoCheckbox" value="Distrito Federal, "/>
+            <label for="estado-7">Distrito Federal</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-8" class="filled-in" name="estadoCheckbox" value="Espírito Santo, "/>
+            <label for="estado-8">Espírito Santo</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-9" class="filled-in" name="estadoCheckbox" value="Goiás, "/>
+            <label for="estado-9">Goiás</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-10" class="filled-in" name="estadoCheckbox" value="Maranhão, "/>
+            <label for="estado-10">Maranhão</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-11" class="filled-in" name="estadoCheckbox" value="Mato Grosso, "/>
+            <label for="estado-11">Mato Grosso</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-12" class="filled-in" name="estadoCheckbox" value="Mato Grosso do Sul, "/>
+            <label for="estado-12">Mato Grosso do Sul</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-13" class="filled-in" name="estadoCheckbox" value="Minas Gerais, "/>
+            <label for="estado-13">Minas Gerais</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-14" class="filled-in" name="estadoCheckbox" value="Pará, "/>
+            <label for="estado-14">Pará</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-15" class="filled-in" name="estadoCheckbox" value="Paraíba, "/>
+            <label for="estado-15">Paraíba</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-16" class="filled-in" name="estadoCheckbox" value="Paraná, "/>
+            <label for="estado-16">Paraná</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-17" class="filled-in" name="estadoCheckbox" value="Pernambuco, "/>
+            <label for="estado-17">Pernambuco</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-18" class="filled-in" name="estadoCheckbox" value="Piauí, "/>
+            <label for="estado-18">Piauí</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-19" class="filled-in" name="estadoCheckbox" value="Rio de Janeiro, "/>
+            <label for="estado-19">Rio de Janeiro</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-20" class="filled-in" name="estadoCheckbox" value="Rio Grande do Norte, "/>
+            <label for="estado-20">Rio Grande do Norte</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-21" class="filled-in" name="estadoCheckbox" value="Rio Grande do Sul, "/>
+            <label for="estado-21">Rio Grande do Sul</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-22" class="filled-in" name="estadoCheckbox" value="Rondônia, "/>
+            <label for="estado-22">Rondônia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-23" class="filled-in" name="estadoCheckbox" value="Roraima, "/>
+            <label for="estado-23">Roraima</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-24" class="filled-in" name="estadoCheckbox" value="Santa Catarina, "/>
+            <label for="estado-24">Santa Catarina</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-25" class="filled-in" name="estadoCheckbox" value="São Paulo, "/>
+            <label for="estado-25">São Paulo</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-26" class="filled-in" name="estadoCheckbox" value="Sergipe, "/>
+            <label for="estado-26">Sergipe</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="estado-27" class="filled-in" name="estadoCheckbox" value="Tocantis, "/>
+            <label for="estado-27">Tocantis</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" id="btn-estado" class="modal-action modal-close btn-flat ">Ok</a>
+        <a href="javascript:void(0)" class="modal-action modal-close waves-effect waves-ripple btn-flat ">Cancelar</a>
+    </div>
+</div>
+
+<div id="modal-especialidade" class="modal">
+    <div class="modal-content">
+        <h2>Especialidade(s)</h2>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-1" class="filled-in" name="especialidadeCheckbox" value="Clínica Médica, "/>
+            <label for="especialidade-1">Clínica Médica</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-2" class="filled-in" name="especialidadeCheckbox" value="Pediatria, "/>
+            <label for="especialidade-2">Pediatria</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-3" class="filled-in" name="especialidadeCheckbox" value="Cirurgia Geral, "/>
+            <label for="especialidade-3">Cirurgia Geral</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-4" class="filled-in" name="especialidadeCheckbox" value="Ginecologia e Obstetrícia, "/>
+            <label for="especialidade-4">Ginecologia e Obstetrícia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-5" class="filled-in" name="especialidadeCheckbox" value="Anestesiologia, "/>
+            <label for="especialidade-5">Anestesiologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-6" class="filled-in" name="especialidadeCheckbox" value="Medicina da Família e Comunidade, "/>
+            <label for="especialidade-6">Medicina da Família e Comunidade</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-7" class="filled-in" name="especialidadeCheckbox" value="Traumatologia e Ortopedia, "/>
+            <label for="especialidade-7">Traumatologia e Ortopedia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-8" class="filled-in" name="especialidadeCheckbox" value="Psiquiatria, "/>
+            <label for="especialidade-8">Psiquiatria</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-9" class="filled-in" name="especialidadeCheckbox" value="Radiologia e Diagnóstico por Imagem, "/>
+            <label for="especialidade-9">Radiologia e Diagnóstico por Imagem</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-10" class="filled-in" name="especialidadeCheckbox" value="Infectologia, "/>
+            <label for="especialidade-10">Infectologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-11" class="filled-in" name="especialidadeCheckbox" value="Dermatologia, "/>
+            <label for="especialidade-11">Dermatologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-12" class="filled-in" name="especialidadeCheckbox" value="Neurologia, "/>
+            <label for="especialidade-12">Neurologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-13" class="filled-in" name="especialidadeCheckbox" value="Neurocirurgia, "/>
+            <label for="especialidade-13">Neurocirurgia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-14" class="filled-in" name="especialidadeCheckbox" value="Oftalmologia, "/>
+            <label for="especialidade-14">Oftalmologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-15" class="filled-in" name="especialidadeCheckbox" value="Otorrinolaringologia, "/>
+            <label for="especialidade-15">Otorrinolaringologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-16" class="filled-in" name="especialidadeCheckbox" value="Medicina do Trabalho, "/>
+            <label for="especialidade-16">Medicina do Trabalho</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-17" class="filled-in" name="especialidadeCheckbox" value="Medicina Física e da Reabilitação, "/>
+            <label for="especialidade-17">Medicina Física e da Reabilitação</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-18" class="filled-in" name="especialidadeCheckbox" value="Radioterapia, "/>
+            <label for="especialidade-18">Radioterapia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-19" class="filled-in" name="especialidadeCheckbox" value="Patologia Clínica e Medicina Laboratorial, "/>
+            <label for="especialidade-19">Patologia Clínica e Medicina Laboratorial</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-20" class="filled-in" name="especialidadeCheckbox" value="Radioterapia, "/>
+            <label for="especialidade-20">Radioterapia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-21" class="filled-in" name="especialidadeCheckbox" value="Genética Médica, "/>
+            <label for="especialidade-21">Genética Médica</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-22" class="filled-in" name="especialidadeCheckbox" value="Medicina do Esporte, "/>
+            <label for="especialidade-22">Medicina do Esporte</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-23" class="filled-in" name="especialidadeCheckbox" value="Medicina Preventiva e Social, "/>
+            <label for="especialidade-23">Medicina Preventiva e Social</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-24" class="filled-in" name="especialidadeCheckbox" value="Medicina do Tráfego, "/>
+            <label for="especialidade-24">Medicina do Tráfego</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-25" class="filled-in" name="especialidadeCheckbox" value="Medicina Nuclear, "/>
+            <label for="especialidade-25">Medicina Nuclear</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-26" class="filled-in" name="especialidadeCheckbox" value="Nutrologia, "/>
+            <label for="especialidade-26">Nutrologia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-27" class="filled-in" name="especialidadeCheckbox" value="Homeopatia, "/>
+            <label for="especialidade-27">Homeopatia</label>
+        </div>
+        <div class="modal-item">
+            <input type="checkbox" id="especialidade-28" class="filled-in" name="especialidadeCheckbox" value="Medicina Legal e Perícia Médica, "/>
+            <label for="especialidade-28">Medicina Legal e Perícia Médica</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" id="btn-especialidade" class="modal-action modal-close btn-flat ">Ok</a>
+        <a href="javascript:void(0)" class="modal-action modal-close btn-flat ">Cancelar</a>
+    </div>
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/verge.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/dynamic.ui.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal({
+            //dismissible: true, // Modal can be dismissed by clicking outside of the modal
+            opacity: .7, // Opacity of modal background
+            in_duration: 200, // Transition in duration
+            //out_duration: 200, // Transition out duration
+            //ready: function() { alert('Ready'); }, // Callback for Modal open
+            //complete: function() { alert('Closed'); } // Callback for Modal close
+            //starting_top: '20px'
+        });
+
+        $('#modal-estado-trigger').click(function(){
+            $('#modal-estado').openModal();
+        });
+
+        $("#btn-estado").click(function(){
+            var texto = '';
+            var count = 1;
+            $.each($("input[name='estadoCheckbox']:checked"), function(){
+                var periodo = $(this).val();
+                var i = $("input[name='estadoCheckbox']:checked").length;
+
+                if(count < i)
+                    texto += periodo;
+                else
+                    texto += periodo.slice(0,-2);
+
+                $("#modal-estado-trigger").html(texto);
+                count++;
+            });
+        });
+
+        $('#modal-especialidade-trigger').click(function(){
+            $('#modal-especialidade').openModal();
+        });
+
+        $("#btn-especialidade").click(function(){
+            var texto = '';
+            var count = 1;
+            $.each($("input[name='especialidadeCheckbox']:checked"), function(){
+                var periodo = $(this).val();
+                var i = $("input[name='especialidadeCheckbox']:checked").length;
+
+                if(count < i)
+                    texto += periodo;
+                else
+                    texto += periodo.slice(0,-2);
+
+                $("#modal-especialidade-trigger").html(texto);
+                count++;
+            });
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/geral.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize_override.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font_icomoon.css" media="screen,projection"/>
+
+    <!-- Para usar os ícones do google material design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <style id="dynamicStyle"></style>
+</head>
+<body>
+
+<nav class="action-bar">
+    <ul id="slide-out" class="side-nav">
+        <div class="container-topo-menu">
+            <img src="img/meu-perfil.jpg" class="circle" />
+            <div class="nome">Vinicius Bispo Neves</div>
+        </div>
+
+        <li><a id="link-atividades" href="index.html#atividades">Atividades</a></li>
+        <li>
+            <a id="meus-editais" href="javascript:void(0)">
+                <span>Meus editais</span>
+                <i class="icon-expand-more"></i>
+            </a>
+            <div class="container-menu-editais" style="display: none">
+                <a href="edital_emescam.html#menu">EMESCAM</a>
+                <a href="edital_heci.html#menu">HECI</a>
+            </div>
+        </li>
+        <li><a href="javascript:void(0)">Sobre o Resimed</a></li>
+        <li style="border-bottom: 1px solid #d8dbe0"><a href="javascript:void(0)">Fale conosco</a></li>
+        <li><a href="javascript:void(0)">Configurações</a></li>
+
+    </ul>
+    <div id="container-action-bar"></div>
+</nav>
+
+<div class="content pad" id="content">
+<!-- Conteudo da pagina -->
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/verge.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!-- Import Controllers -->
+<script type="text/javascript" src="js/app/main.js"></script>
+<script type="text/javascript" src="js/io/ajax.js"></script>
+<script type="text/javascript" src="js/constants/routes_constants.js"></script>
+<script type="text/javascript" src="js/constants/server_constants.js"></script>
+<script type="text/javascript" src="js/variables/user_variables.js"></script>
+<script type="text/javascript" src="js/controller/menu_drawer.js"></script>
+<script type="text/javascript" src="js/controller/index.js"></script>
+<script type="text/javascript" src="js/directors/index.js"></script>
+<script type="text/javascript" src="js/dynamic.ui.js"></script>
+<script type="text/javascript">
+  d_index.execute();
+</script>
+
+</body>
+</html>

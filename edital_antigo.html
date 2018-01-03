@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/geral.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize_override.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font_icomoon.css" media="screen,projection"/>
+
+    <!-- Para usar os ícones do google material design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <title>Resimed</title>
+
+    <style id="dynamicStyle"></style>
+</head>
+<body>
+
+<nav class="action-bar perfil">
+    <a href="javascript:window.history.back();" class="button-collapse"><i class="icon-nav-back normal"></i></a>
+    <a href="javascript:void(0)" id="btn-menu-favorite" class="button-action">
+        <i class="icon-favorite-on"></i>
+    </a>
+    <h2 class="action-bar">EMESCAM</h2>
+</nav>
+
+<div class="container-tabs">
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s3"><a href="#edital">Edital</a></li>
+            <li class="tab col s3"><a href="#vagas" class="active">Vagas</a></li>
+            <li class="tab col s3"><a href="#calendario">Calendário</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content pad">
+
+    <div id="edital" class="col s12">
+        <div class="item-edital">
+            <h6>Edital</h6>
+            <p>Nº 01/2016</p>
+        </div>
+        <div class="item-edital">
+            <h6>Instituição</h6>
+            <p>EMESCAM - Escola da Santa Casa de Misericórdia de Vitória</p>
+        </div>
+        <div class="item-edital">
+            <h6>Endereço</h6>
+            <p>Av. N. S. da Penha, 2190, Santa Luiza - Vitória - ES - 29045-402</p>
+        </div>
+        <div class="item-edital">
+            <h6>Informações</h6>
+            <p>Outras informações poderão ser obtidas na Secretaria da Comissão de Residência
+                Médica (COREME) no Hospital Santa Casa de Misericórdia de Vitória, pelo telefone
+                (27) 3212-7223, no horário das 09:00 h às 15:00 h ou por e-mail:
+                residencia@santacasavitoria.org</p>
+        </div>
+    </div>
+
+    <div id="vagas" class="col s12">
+        <div id="container-acesso-direto">
+            <h3>Acesso Direto</h3>
+            <div class="item-vaga">
+                <div class="item-vaga-titulo">
+                    <span>Anestesiologia</span>
+                    <i class="icon-expand-more"></i>
+                </div>
+                <div class="container-vaga-descricao">
+                    <div class="item-vaga-descricao">
+                        <div>Código: <span>01</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Duração do programa: <span>3 anos</span></div>
+                    </div>
+                    <div class="item-vaga-descricao">
+                        <div>Número de vagas: <span>01</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Cirurgia Geral</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>02</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>02 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>02</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Clínica Médica</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>03</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>02 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>08</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Ginecologia e Obstetrícia</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>04</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>03 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>02</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="container-pre-requisito">
+            <h3>Pré-requisito</h3>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Cardiologia</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>05</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>02 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>01</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Requisito: <span>Cliníca Médica</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Cancerologia Clínica</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>06</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>03 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>01</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Requisito: <span>Cliníca Médica</span></div>
+                </div>
+            </div>
+        </div>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Cancerologia Cirúrgica</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>07</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>03 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>01</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Requisito: <span>Cirurgia Geral</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="container-ano-opcional">
+            <h3>3º ano opcional</h3>
+            <div class="item-vaga">
+            <div class="item-vaga-titulo">
+                <span>Neonatologia</span>
+                <i class="icon-expand-more"></i>
+            </div>
+            <div class="container-vaga-descricao">
+                <div class="item-vaga-descricao">
+                    <div>Código: <span>08</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Duração do programa: <span>02 anos</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Número de vagas: <span>02</span></div>
+                </div>
+                <div class="item-vaga-descricao">
+                    <div>Requisito: <span>Pediatria</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="calendario" class="col s12">
+
+        <ul>
+            <li>
+                <a href="descricao_edital_emescam.html#inscricoes" class="item-calendario">
+                    <div>
+                        <h6>Inscrições</h6>
+                        <p>03/11/2015 a 20/11/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#curriculum" class="item-calendario">
+                    <div>
+                        <h6>Entrega do curriculum</h6>
+                        <p>25/11/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#data_prova" class="item-calendario">
+                    <div>
+                        <h6>Data da prova</h6>
+                        <p>1ª etapa: 29/11/2015</p>
+                        <p>2ª etapa: 29/11/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#resultado_1" class="item-calendario">
+                    <div>
+                        <h6>Divulgação do resultado da 1ª etapa</h6>
+                        <p>04/12/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#resultado_final" class="item-calendario">
+                    <div>
+                        <h6>Divulgação do resultado final</h6>
+                        <p>30/12/2015</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="descricao_edital_emescam.html#matricula" class="item-calendario">
+                    <div>
+                        <h6>Matrículas</h6>
+                        <p>01/02/2016 a 05/02/2016</p>
+                    </div>
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/verge.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/dynamic.ui.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
+
+        (function ($) {
+            $("#vagas").on('click', '.item-vaga-titulo', function (e) {
+                $(this).next('.container-vaga-descricao').toggle(200);
+                if($(this).children('i').hasClass('icon-expand-less')){
+                    $(this).children('i').removeClass('icon-expand-less').addClass('icon-expand-more');
+                }else{
+                    $(this).children('i').removeClass('icon-expand-more').addClass('icon-expand-less');
+                }
+            });
+        })(jQuery);
+
+        (function ($) {
+            $("nav").on('click', '#btn-menu-favorite', function (e) {
+                if($(this).children('i').hasClass('icon-favorite-on')){
+                    $(this).children('i').removeClass('icon-favorite-on').addClass('icon-favorite-off');
+                    Materialize.toast('Edital removido do acompanhamento.', 3000, 'rounded');
+                }else{
+                    $(this).children('i').removeClass('icon-favorite-off').addClass('icon-favorite-on');
+                    Materialize.toast('Edital em acompanhamento.', 3000, 'rounded');
+                }
+            });
+        })(jQuery);
+
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,466 @@
+/* RESET */
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 14px;
+    color: #444444;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: #39ccd5;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* tamanho dos ícones */
+[class^="icon-"].normal, [class*=" icon-"].normal {
+    font-size: 28px;
+}
+
+[class^="icon-"].extra-larger, [class*=" icon-"].extra-larger {
+    font-size: 80px;
+}
+
+/* cor dos ícones */
+[class^="icon-"].silver, [class*=" icon-"].silver {
+    color: #587B7F;
+}
+
+/*------------- BOTÕES ---------------*/
+
+.bt-standard {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 3px;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    /*    -webkit-tap-highlight-color: rgba(22, 162, 141, 0.3);*/
+}
+
+.bt-silver {
+    background-color: #587B7F;
+    color: white;
+}
+
+.bt-silver:active {
+    background-color: #45696B;
+    border-radius: 3px;
+}
+
+.link-bt-standard {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 24px;
+    margin: 25px 0;
+    font-family: 'Lato', arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #587B7F;
+}
+
+
+
+/*-------------- GERAL --------------*/
+
+.content.bg-splash {
+    background-color: #054C29;
+}
+
+.bt-cinza {
+
+}
+
+/*-------------- TELA INICIAL --------------*/
+
+#sem-edital {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right:8px;
+    left: 8px;
+}
+
+.report {
+    text-align: center;
+}
+.report p {
+    margin-top: 5px;
+}
+
+.bt-busca-editais {
+    position: absolute;
+    bottom: 0;
+}
+
+/*-------------- BUSCAR EDITAIS --------------*/
+
+/*
+.input {
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font-size: 14px;
+    color: #444444;
+    margin-bottom: 5px;
+}
+
+.input select {
+    height: 56px;
+    padding: 0px 5px;
+    color: #666666;
+}
+*/
+
+.item-form {
+    margin-bottom: 20px;
+}
+
+.item-form:first-of-type {
+    margin-top: 12px;
+}
+
+.item-form label {
+    display: block;
+    font-size: 14px;
+    color: #444444;
+}
+
+.item-form a {
+    display: block;
+    padding: 6px 0 16px 0;
+    line-height: 22px;
+    color: #666666;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+
+/*------------- RESULTADO BUSCA ---------------*/
+
+.parametros-busca {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background-color: #054C29;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    padding: 0 8px 12px 60px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.item-parametro {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.item-parametro span {
+    font-weight: 700;
+}
+
+.item-busca {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.item-busca:active {
+    background-color: #e0e4e8;
+}
+
+.item-busca div {
+    font-weight: 700;
+}
+
+
+/*------------- EDITAL ---------------*/
+
+.container-tabs {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.item-edital {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.item-edital h6 {
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+.bt-baixar-edital {
+    margin-top: 24px;
+}
+
+.container-vagas:first-of-type {
+    margin-top: 0;
+}
+
+.container-vagas {
+    margin-top: 40px;
+}
+
+#vagas h3 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+#vagas h3:first-child {
+    margin-top: 10px;
+}
+
+.item-vaga {
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.item-vaga-titulo {
+    position: relative;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.item-vaga-titulo i {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    line-height: 56px;
+    color: #587B7F;
+}
+
+.container-vaga-descricao {
+    display: none;
+}
+
+.item-vaga-descricao {
+    padding: 5px 0;
+}
+
+.item-vaga-descricao:nth-of-type(1) {
+    padding-top: 0;
+}
+
+.item-vaga-descricao:last-child {
+    padding-bottom: 12px;
+}
+
+.item-vaga-descricao div {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.item-vaga-descricao div span {
+    font-weight: 700;
+}
+
+.item-calendario {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.item-calendario:active {
+    background-color: #e0e4e8;
+}
+
+.item-calendario > * {
+    vertical-align: middle;
+}
+
+.item-calendario div {
+    display: inline-block;
+}
+
+.item-calendario h6 {
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+.item-calendario i {
+    color: #587B7F;
+}
+
+.item-calendario-descricao {
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.item-calendario-descricao.container-link {
+    display: block;
+}
+
+.item-calendario-descricao.container-link:active {
+    background-color: #e0e4e8;
+}
+
+.item-calendario-descricao h6 {
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+.lista-calendario-descricao:first-of-type h3 {
+    margin-top: 10px;
+}
+
+.lista-calendario-descricao h3 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.lista-observacoes-edital {
+    margin-top: 30px;
+}
+
+.lista-observacoes-edital h6 {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.lista-observacoes-edital li {
+    list-style-type: disc;
+    margin: 0 0 0px 20px;
+}
+
+.lista-observacoes-edital li p {
+    margin-bottom: 10px;
+}
+
+/*------------- TAREFAS ---------------*/
+
+.lista-calendario {
+    margin-top: 12px;
+}
+
+.lista-calendario li {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.lista-calendario h3 {
+    font-weight: 700;
+    color: #ffa200;
+}
+
+.lista-calendario h3 span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #bbbbbb;
+    margin-left: 10px;
+}
+
+.lista-tarefas h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.lista-tarefas li {
+    margin-bottom: 0;
+    border: none;
+}
+
+.lista-tarefas li a {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px dotted #e0e4e8;
+}
+
+.lista-tarefas li:last-of-type a {
+    border: none;
+}
+
+.item-tarefas:active {
+    background-color: #e0e4e8;
+}
+
+.item-tarefas div {
+    display: inline-block;
+}
+
+.item-tarefas > * {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
